@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="MagazinInstrumente" id="C1029C12-DE02-3527-3F33-05482358A437" version="3.5">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-10-27 16:00:41 UTC</createdTime>
+<ownerDesignName>L03_LogicalUML</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>C1029C12-DE02-3527-3F33-05482358A437</designId>
+</OSDM_Design>

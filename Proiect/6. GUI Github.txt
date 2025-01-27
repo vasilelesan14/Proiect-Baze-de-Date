@@ -1,0 +1,3 @@
+Proiectul pentru interfata grafica este prea mare pentru a fi incarcat pe moodle, dar este disponibil pe GitHub la acest link:
+
+https://github.com/vasilelesan14/Proiect-Baze-de-Date.git

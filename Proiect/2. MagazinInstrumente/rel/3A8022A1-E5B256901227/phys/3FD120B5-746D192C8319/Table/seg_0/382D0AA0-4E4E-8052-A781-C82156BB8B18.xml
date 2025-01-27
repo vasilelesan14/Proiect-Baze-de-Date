@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="CLIENTI" directorySegmentName="seg_0" id="382D0AA0-4E4E-8052-A781-C82156BB8B18">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="nume" id="38377B1D-5663-0974-A854-B50E3485500D">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_client" id="BFB83270-4ACE-25E2-3C30-2CB2A1850DD1">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="prenume" id="C283B7CC-1BFA-C2B4-C984-56AF029422D0">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="CLIENTI_PK" id="A8DBE2BB-5193-589D-0ABB-7BE6DEA5F797">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="clienti_nume_uk" id="82A86072-33DA-1AB4-ED25-B53DE73BB8EF">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev12c>

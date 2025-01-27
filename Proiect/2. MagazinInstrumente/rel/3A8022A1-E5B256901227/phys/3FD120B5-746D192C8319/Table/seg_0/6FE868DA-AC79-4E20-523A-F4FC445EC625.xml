@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="DETALII_CLIENTI" directorySegmentName="seg_0" id="6FE868DA-AC79-4E20-523A-F4FC445EC625">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="adresa" id="08301A32-2BA6-F69D-CF05-0520EC92BD68">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_client" id="4449B92C-3CEB-A526-34C9-0769BFBEB20F">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="email" id="86307D24-1F87-24E9-3EC1-610A3BAB3D12">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="data_inregistrarii" id="CC8CF2D8-6670-E07E-722A-DF8B09D4D5DE">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="telefon" id="E2A5F760-5833-2287-8909-6BF9718EC458">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="DETALII_CLIENTI__IDX" id="6CE326BB-E39B-A29A-4C98-C8A906337224">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="clienti_detalii_clienti_fk" id="780E9BD4-9742-8333-3A1A-B508E4F86A06">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="detalii_clienti_email_uk" id="79C7AFB3-8CC6-45C9-9986-52A7993B1D4A">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev12c>

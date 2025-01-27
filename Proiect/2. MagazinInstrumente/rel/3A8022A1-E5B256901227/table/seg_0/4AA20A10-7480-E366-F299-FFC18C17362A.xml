@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4AA20A10-7480-E366-F299-FFC18C17362A" name="produse_vanzari">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_produs" id="55063BF0-72D2-6562-04F2-DA0CF30BCA4B">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="32A924A4-C572-D551-296A-54BD22100559" referredColumn="8ABB6767-30C6-6C2C-0BA6-501AA560DE7C"/>
+</associations>
+</Column>
+<Column name="id_vanzare" id="7B3B6596-837D-F190-7662-9B2B06849F45">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A36CE3FD-57BC-5F3F-2DF7-D1E49D674376" referredColumn="21A80250-9766-1EE8-5548-7DB7347CA0D1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6F5E1403-46DF-1E5F-6417-A0B63B5B27FC" name="produse_vanzari_PK">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="55063BF0-72D2-6562-04F2-DA0CF30BCA4B"/>
+<colUsage columnID="7B3B6596-837D-F190-7662-9B2B06849F45"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6E25C66E-BC5F-2D29-0804-92B5AA53C481" name="produse_vanzari_PRODUSE_FK">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<generatorID>CF8F0D94-AFD8-076F-BEEB-6CC2A1E9FCB7</generatorID>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="55063BF0-72D2-6562-04F2-DA0CF30BCA4B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="681989DE-703F-E963-FBB3-C8E44B5F9BD2" name="produse_vanzari_VANZARI_FK">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<generatorID>CF8F0D94-AFD8-076F-BEEB-6CC2A1E9FCB7</generatorID>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7B3B6596-837D-F190-7662-9B2B06849F45"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

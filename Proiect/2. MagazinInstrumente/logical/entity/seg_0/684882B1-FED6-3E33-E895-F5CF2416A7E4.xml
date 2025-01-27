@@ -1,0 +1,127 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="684882B1-FED6-3E33-E895-F5CF2416A7E4" name="PRODUSE">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-10-27 16:15:33 UTC</createdTime>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<engineerTo>
+<item key="3A8022A1-A0B8-99A2-BB34-E5B256901227" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_produs" id="C4786BBD-7FB9-59A8-B60C-47D05220BEA8">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-10-27 16:15:42 UTC</createdTime>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<engineerTo>
+<item key="3A8022A1-A0B8-99A2-BB34-E5B256901227" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nume" id="6D3B0421-B127-6DC3-A7EF-99C0C12A3026">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-10-27 16:16:36 UTC</createdTime>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<engineerTo>
+<item key="3A8022A1-A0B8-99A2-BB34-E5B256901227" value="true"/>
+</engineerTo>
+<constraintName>produse_nume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(nume)&gt;1"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pret" id="0CD0A7C5-12C9-FE83-A145-DB57470EB9DE">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-10-27 16:16:46 UTC</createdTime>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<engineerTo>
+<item key="3A8022A1-A0B8-99A2-BB34-E5B256901227" value="true"/>
+</engineerTo>
+<constraintName>produse_pret_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="pret&gt;0"/>
+</checkConstraint>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="stoc" id="21FFB4CB-845E-9B4E-7EA1-4B6D57C5A49B">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-10-27 16:18:35 UTC</createdTime>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<engineerTo>
+<item key="3A8022A1-A0B8-99A2-BB34-E5B256901227" value="true"/>
+</engineerTo>
+<constraintName>produse_stoc_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="stoc&gt;=0"/>
+</checkConstraint>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_categorie" id="18B434D8-F92E-22B6-6260-A8E35EB2C7FF">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-11-10 21:26:48 UTC</createdTime>
+<generatorID>65347ECC-D389-C7D5-8CAD-59924484D0D9</generatorID>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<engineerTo>
+<item key="3A8022A1-A0B8-99A2-BB34-E5B256901227" value="true"/>
+</engineerTo>
+<referedAttribute>325B10E2-9E01-5738-B86F-C0CD769C3628</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A81465D4-E839-7CE8-6E03-5C5668E0EC1D" name="PRODUSE_PK">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-10-27 16:15:54 UTC</createdTime>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="3A8022A1-A0B8-99A2-BB34-E5B256901227" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>C4786BBD-7FB9-59A8-B60C-47D05220BEA8</newElementsIDs>
+<usedAttributes>
+<attributeRef>C4786BBD-7FB9-59A8-B60C-47D05220BEA8</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="E487DD18-AB34-1046-A5E0-915EB85EA699" name="produse_nume">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-10-27 16:33:44 UTC</createdTime>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="3A8022A1-A0B8-99A2-BB34-E5B256901227" value="false"/>
+</engineerTo>
+<newElementsIDs>6D3B0421-B127-6DC3-A7EF-99C0C12A3026</newElementsIDs>
+<usedAttributes>
+<attributeRef>6D3B0421-B127-6DC3-A7EF-99C0C12A3026</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

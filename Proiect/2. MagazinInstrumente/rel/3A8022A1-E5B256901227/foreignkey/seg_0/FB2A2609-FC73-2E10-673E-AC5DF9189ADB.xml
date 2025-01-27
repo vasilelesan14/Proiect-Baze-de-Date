@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FB2A2609-FC73-2E10-673E-AC5DF9189ADB" containerWithKeyObject="3C8686CB-6C52-1E82-9836-B85981A3EF2B" localFKIndex="08D94350-A051-838F-3BB0-0104D3CF049E" name="clienti_vanzari_fk">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<generatorID>C30C45BB-EED1-C30C-5EE9-B0E9FCF88E8F</generatorID>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<referredTableLongName>CLIENTI</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>382D0AA0-4E4E-8052-A781-C82156BB8B18</referredTableID>
+<keyObject>A8DBE2BB-5193-589D-0ABB-7BE6DEA5F797</keyObject>
+<referredKeyID>A8DBE2BB-5193-589D-0ABB-7BE6DEA5F797</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_client</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

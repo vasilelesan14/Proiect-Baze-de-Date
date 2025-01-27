@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CFE2A24A-83C2-4DDE-DCBE-A4F6AFFF9E6C" name="CATEGORII">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<generatorID>3AB13786-5869-E6EB-7643-3240F9AD899C</generatorID>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_categorie" id="98B92019-40DD-1A09-1930-FCA9EB0D2474">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<generatorID>325B10E2-9E01-5738-B86F-C0CD769C3628</generatorID>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementStartWith>100</autoIncrementStartWith>
+<autoIncrementIncrementBy>2</autoIncrementIncrementBy>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementGenerateTrigger>false</autoIncrementGenerateTrigger>
+</Column>
+<Column name="denumire" id="F66B2D40-0048-AD7D-CE44-A869A79C0F9F">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<generatorID>74E0E6CD-C3F4-3D92-F29E-945D8CA71FE8</generatorID>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<constraintName>categorii_denumire_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(denumire)&gt;1"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FAADEBB3-26C0-56C0-75F2-1AC795D59F50" name="CATEGORII_PK">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<generatorID>66ECD9F7-AA2F-20A7-56FC-2B12C7ABA278</generatorID>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="98B92019-40DD-1A09-1930-FCA9EB0D2474"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8F0808EB-5413-6C3D-63DE-D4A34B2DC1C2" containerWithKeyObject="4322700C-0CF9-0C73-4F89-529428072674" localFKIndex="67B6444D-03EA-A097-B90E-0A22F043C909" name="categorii_produse_fk">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<generatorID>65347ECC-D389-C7D5-8CAD-59924484D0D9</generatorID>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<referredTableLongName>CATEGORII</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>CFE2A24A-83C2-4DDE-DCBE-A4F6AFFF9E6C</referredTableID>
+<keyObject>FAADEBB3-26C0-56C0-75F2-1AC795D59F50</keyObject>
+<referredKeyID>FAADEBB3-26C0-56C0-75F2-1AC795D59F50</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_categorie</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

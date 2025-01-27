@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3AB13786-5869-E6EB-7643-3240F9AD899C" name="CATEGORII">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-10-27 16:14:16 UTC</createdTime>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<engineerTo>
+<item key="3A8022A1-A0B8-99A2-BB34-E5B256901227" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_categorie" id="325B10E2-9E01-5738-B86F-C0CD769C3628">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-10-27 16:14:28 UTC</createdTime>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<engineerTo>
+<item key="3A8022A1-A0B8-99A2-BB34-E5B256901227" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="denumire" id="74E0E6CD-C3F4-3D92-F29E-945D8CA71FE8">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-10-27 16:14:55 UTC</createdTime>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<engineerTo>
+<item key="3A8022A1-A0B8-99A2-BB34-E5B256901227" value="true"/>
+</engineerTo>
+<constraintName>categorii_denumire_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(denumire)&gt;1"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="66ECD9F7-AA2F-20A7-56FC-2B12C7ABA278" name="CATEGORII_PK">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-10-27 16:14:52 UTC</createdTime>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="3A8022A1-A0B8-99A2-BB34-E5B256901227" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>325B10E2-9E01-5738-B86F-C0CD769C3628</newElementsIDs>
+<usedAttributes>
+<attributeRef>325B10E2-9E01-5738-B86F-C0CD769C3628</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

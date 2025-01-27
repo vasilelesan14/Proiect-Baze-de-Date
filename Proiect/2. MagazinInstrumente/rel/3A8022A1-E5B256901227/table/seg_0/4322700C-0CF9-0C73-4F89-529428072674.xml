@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4322700C-0CF9-0C73-4F89-529428072674" name="PRODUSE">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<generatorID>684882B1-FED6-3E33-E895-F5CF2416A7E4</generatorID>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_produs" id="8ABB6767-30C6-6C2C-0BA6-501AA560DE7C">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<generatorID>C4786BBD-7FB9-59A8-B60C-47D05220BEA8</generatorID>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementStartWith>200</autoIncrementStartWith>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementGenerateTrigger>false</autoIncrementGenerateTrigger>
+</Column>
+<Column name="nume" id="EA51507C-EED8-6F82-1140-2DCAF23A9DC4">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<generatorID>6D3B0421-B127-6DC3-A7EF-99C0C12A3026</generatorID>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<constraintName>produse_nume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(nume)&gt;1"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pret" id="D96AF002-0F88-3B34-0BC7-918C5DFD15A6">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<generatorID>0CD0A7C5-12C9-FE83-A145-DB57470EB9DE</generatorID>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<constraintName>produse_pret_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="pret&gt;0"/>
+</checkConstraint>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="stoc" id="3BEC3438-3ADE-C177-15BB-AABD65AD5A4F">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<generatorID>21FFB4CB-845E-9B4E-7EA1-4B6D57C5A49B</generatorID>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<constraintName>produse_stoc_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="stoc&gt;=0"/>
+</checkConstraint>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_categorie" id="151950F9-C517-8D9B-44AC-1E9061FE3248">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<generatorID>18B434D8-F92E-22B6-6260-A8E35EB2C7FF</generatorID>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8F0808EB-5413-6C3D-63DE-D4A34B2DC1C2" referredColumn="98B92019-40DD-1A09-1930-FCA9EB0D2474"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="50EFA764-EC6E-A709-5B4A-3B1A219959EF" name="PRODUSE_PK">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<generatorID>A81465D4-E839-7CE8-6E03-5C5668E0EC1D</generatorID>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8ABB6767-30C6-6C2C-0BA6-501AA560DE7C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8F337E62-20A0-7588-79FB-56F71F56C77C" name="produse_nume">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<generatorID>E487DD18-AB34-1046-A5E0-915EB85EA699</generatorID>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA51507C-EED8-6F82-1140-2DCAF23A9DC4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="67B6444D-03EA-A097-B90E-0A22F043C909" name="categorii_produse_fk">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<generatorID>65347ECC-D389-C7D5-8CAD-59924484D0D9</generatorID>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="151950F9-C517-8D9B-44AC-1E9061FE3248"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

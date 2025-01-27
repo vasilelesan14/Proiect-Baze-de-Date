@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="382D0AA0-4E4E-8052-A781-C82156BB8B18" name="CLIENTI">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<generatorID>3324E7F3-FA26-3D36-558A-11DFFADE43AC</generatorID>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_client" id="BFB83270-4ACE-25E2-3C30-2CB2A1850DD1">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<generatorID>58BFD6AE-5B04-1BE9-1F6C-9EB36ABF30AF</generatorID>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementStartWith>500</autoIncrementStartWith>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementGenerateTrigger>false</autoIncrementGenerateTrigger>
+</Column>
+<Column name="nume" id="38377B1D-5663-0974-A854-B50E3485500D">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<generatorID>DB7CCA35-F98F-5BD0-1D82-21F767F5618F</generatorID>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<constraintName>clienti_nume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(nume)&gt;1 AND regexp_like(nume, &apos;^[A-Za-z\-]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prenume" id="C283B7CC-1BFA-C2B4-C984-56AF029422D0">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<generatorID>773E5F02-8A7A-C5A7-3946-23F77ECDBB8F</generatorID>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<constraintName>clienti_prenume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(prenume)&gt;1 AND regexp_like(nume, &apos;^[A-Za-z\-]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A8DBE2BB-5193-589D-0ABB-7BE6DEA5F797" name="CLIENTI_PK">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<generatorID>186AD2C0-DE7F-1DBF-24A4-AFD0D7D274AF</generatorID>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BFB83270-4ACE-25E2-3C30-2CB2A1850DD1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="82A86072-33DA-1AB4-ED25-B53DE73BB8EF" name="clienti_nume_uk">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<generatorID>7314D242-211B-A362-7C0F-36D51690A19D</generatorID>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="38377B1D-5663-0974-A854-B50E3485500D"/>
+<colUsage columnID="C283B7CC-1BFA-C2B4-C984-56AF029422D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="produse_vanzari" directorySegmentName="seg_0" id="CF8F0D94-AFD8-076F-BEEB-6CC2A1E9FCB7">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-11-10 21:08:32 UTC</createdTime>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<engineerTo>
+<item key="3A8022A1-A0B8-99A2-BB34-E5B256901227" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>684882B1-FED6-3E33-E895-F5CF2416A7E4</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>4CF6999E-1B1C-1648-08FD-82F9674B6D26</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

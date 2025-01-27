@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="clienti_vanzari_fk" directorySegmentName="seg_0" id="C30C45BB-EED1-C30C-5EE9-B0E9FCF88E8F">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-11-10 21:25:44 UTC</createdTime>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<engineerTo>
+<item key="3A8022A1-A0B8-99A2-BB34-E5B256901227" value="true"/>
+</engineerTo>
+<sourcePk>186AD2C0-DE7F-1DBF-24A4-AFD0D7D274AF</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>initiaza</nameOnSource>
+<nameOnTarget>este initiata de</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3324E7F3-FA26-3D36-558A-11DFFADE43AC</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>4CF6999E-1B1C-1648-08FD-82F9674B6D26</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

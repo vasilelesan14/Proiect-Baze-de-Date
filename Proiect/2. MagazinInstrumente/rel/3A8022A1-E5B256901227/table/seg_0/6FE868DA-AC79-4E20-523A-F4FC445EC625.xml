@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6FE868DA-AC79-4E20-523A-F4FC445EC625" name="DETALII_CLIENTI">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<generatorID>033C2F03-A546-D6E4-E1A8-BDD9D8631B9B</generatorID>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="telefon" id="E2A5F760-5833-2287-8909-6BF9718EC458">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<generatorID>5973E51C-2650-0B5E-6860-6F7075A8CADA</generatorID>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<constraintName>detalii_clienti_telefon_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(telefon,&apos;^[0-9]{10}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="86307D24-1F87-24E9-3EC1-610A3BAB3D12">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<generatorID>D3AE4B11-5061-90A0-AFA6-0D41EFB6403E</generatorID>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<constraintName>detalii_clienti_email_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(email, &apos;[a-z0-9._%-]+@[a-z0-9._%-]+\.[a-z]{2,4}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="adresa" id="08301A32-2BA6-F69D-CF05-0520EC92BD68">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<generatorID>8983EB1D-3EF4-8DCE-5A9C-74A68C494C51</generatorID>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_inregistrarii" id="CC8CF2D8-6670-E07E-722A-DF8B09D4D5DE">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<generatorID>9CA255DE-0EFA-F7E0-5BF5-74C2465A92CE</generatorID>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_client" id="4449B92C-3CEB-A526-34C9-0769BFBEB20F">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<generatorID>22D4AD56-AFEC-B208-DF12-1A24C03693B1</generatorID>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1B7713E5-38B9-A703-BC01-31FCD96085D8" referredColumn="BFB83270-4ACE-25E2-3C30-2CB2A1850DD1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="79C7AFB3-8CC6-45C9-9986-52A7993B1D4A" name="detalii_clienti_email_uk">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<generatorID>C4593B70-5F63-0FA2-F0BE-68F3A12DE307</generatorID>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="86307D24-1F87-24E9-3EC1-610A3BAB3D12"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6CE326BB-E39B-A29A-4C98-C8A906337224" name="DETALII_CLIENTI__IDX">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>55C08E75-42E6-C926-0E8A-71AD735300F8</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="4449B92C-3CEB-A526-34C9-0769BFBEB20F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="780E9BD4-9742-8333-3A1A-B508E4F86A06" name="clienti_detalii_clienti_fk">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<generatorID>55C08E75-42E6-C926-0E8A-71AD735300F8</generatorID>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4449B92C-3CEB-A526-34C9-0769BFBEB20F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

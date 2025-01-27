@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="033C2F03-A546-D6E4-E1A8-BDD9D8631B9B" name="DETALII_CLIENTI">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 18:10:50 UTC</createdTime>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<engineerTo>
+<item key="3A8022A1-A0B8-99A2-BB34-E5B256901227" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="telefon" id="5973E51C-2650-0B5E-6860-6F7075A8CADA">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 18:11:07 UTC</createdTime>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<engineerTo>
+<item key="3A8022A1-A0B8-99A2-BB34-E5B256901227" value="true"/>
+</engineerTo>
+<constraintName>detalii_clienti_telefon_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(telefon,&apos;^[0-9]{10}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="D3AE4B11-5061-90A0-AFA6-0D41EFB6403E">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 18:13:58 UTC</createdTime>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<engineerTo>
+<item key="3A8022A1-A0B8-99A2-BB34-E5B256901227" value="true"/>
+</engineerTo>
+<constraintName>detalii_clienti_email_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(email, &apos;[a-z0-9._%-]+@[a-z0-9._%-]+\.[a-z]{2,4}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="adresa" id="8983EB1D-3EF4-8DCE-5A9C-74A68C494C51">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 18:16:44 UTC</createdTime>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<engineerTo>
+<item key="3A8022A1-A0B8-99A2-BB34-E5B256901227" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_inregistrarii" id="9CA255DE-0EFA-F7E0-5BF5-74C2465A92CE">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 18:27:34 UTC</createdTime>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<engineerTo>
+<item key="3A8022A1-A0B8-99A2-BB34-E5B256901227" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_client" id="22D4AD56-AFEC-B208-DF12-1A24C03693B1">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 19:00:50 UTC</createdTime>
+<generatorID>55C08E75-42E6-C926-0E8A-71AD735300F8</generatorID>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<engineerTo>
+<item key="3A8022A1-A0B8-99A2-BB34-E5B256901227" value="true"/>
+</engineerTo>
+<referedAttribute>58BFD6AE-5B04-1BE9-1F6C-9EB36ABF30AF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C4593B70-5F63-0FA2-F0BE-68F3A12DE307" name="detalii_clienti_email_uk">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 18:39:09 UTC</createdTime>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="3A8022A1-A0B8-99A2-BB34-E5B256901227" value="false"/>
+</engineerTo>
+<newElementsIDs>D3AE4B11-5061-90A0-AFA6-0D41EFB6403E</newElementsIDs>
+<usedAttributes>
+<attributeRef>D3AE4B11-5061-90A0-AFA6-0D41EFB6403E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

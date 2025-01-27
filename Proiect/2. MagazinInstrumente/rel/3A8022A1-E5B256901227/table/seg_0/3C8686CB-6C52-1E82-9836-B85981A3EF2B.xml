@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3C8686CB-6C52-1E82-9836-B85981A3EF2B" name="VANZARI">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<generatorID>4CF6999E-1B1C-1648-08FD-82F9674B6D26</generatorID>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_vanzare" id="21A80250-9766-1EE8-5548-7DB7347CA0D1">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<generatorID>EA78A167-4F2D-B1CC-DDEC-69BDC5F51799</generatorID>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementStartWith>1000</autoIncrementStartWith>
+<autoIncrementIncrementBy>5</autoIncrementIncrementBy>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementGenerateTrigger>false</autoIncrementGenerateTrigger>
+</Column>
+<Column name="data_vanzare" id="9A9985C9-4DD3-D2E2-62AF-AB11D4F8482D">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<generatorID>BB67AF75-EF07-5CEC-A9C3-53DE54584246</generatorID>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_client" id="EC03D172-CA0A-65A0-2F02-C3DC1BECCE72">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<generatorID>7E6A4E02-6981-EDD4-B8CA-E48C7D68AB58</generatorID>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FB2A2609-FC73-2E10-673E-AC5DF9189ADB" referredColumn="BFB83270-4ACE-25E2-3C30-2CB2A1850DD1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4BB4D39D-0AD3-A10C-6B22-22CD49220AE0" name="VANZARI_PK">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<generatorID>B814991A-D9C4-7759-C5BF-410C6A353F3E</generatorID>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="21A80250-9766-1EE8-5548-7DB7347CA0D1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="08D94350-A051-838F-3BB0-0104D3CF049E" name="clienti_vanzari_fk">
+<createdBy>Vasile</createdBy>
+<createdTime>2024-12-04 22:01:47 UTC</createdTime>
+<generatorID>C30C45BB-EED1-C30C-5EE9-B0E9FCF88E8F</generatorID>
+<ownerDesignName>MagazinInstrumente</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EC03D172-CA0A-65A0-2F02-C3DC1BECCE72"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
